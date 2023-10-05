@@ -1,7 +1,7 @@
 ARG NODE_VER
 FROM node:${NODE_VER}
 
-USER node
+USER root
 WORKDIR /home/node/app
 RUN mkdir node_modules
 
