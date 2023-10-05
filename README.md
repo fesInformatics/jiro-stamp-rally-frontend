@@ -2,7 +2,7 @@
 
 ## 概要
 
-- Node 16.20.1
+- Node 18.17.1
 - React
 - TypeScript
 
