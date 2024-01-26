@@ -36,10 +36,17 @@ const SigninContainer = () => {
       await createUser(data);
       // TODO: ホーム画面に遷移する
     } catch (error: any) {
-      setError("root.serverError", {
-        type: error.response.data.statusCode,
-        message: error.response.data.message,
-      });
+      if (error.response)
+        setError("root.serverError", {
+          type: error.response.data.statusCode,
+          message: error.response.data.message,
+        });
+      else {
+        setError("root.serverError", {
+          type: "500",
+          message: "サーバーとの通信に失敗しました",
+        });
+      }
     }
   };
 
