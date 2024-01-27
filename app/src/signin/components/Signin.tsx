@@ -57,6 +57,7 @@ const Signin = (props: Props) => {
               })}
             />
             <TextField
+              type="password"
               margin="normal"
               fullWidth
               id="password"
@@ -70,6 +71,7 @@ const Signin = (props: Props) => {
               })}
             />
             <TextField
+              type="password"
               margin="normal"
               fullWidth
               id="confirmedPassword"
