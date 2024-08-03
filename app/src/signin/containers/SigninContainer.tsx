@@ -11,15 +11,10 @@ const createUser = async (data: Inputs) => {
     headers: { "Content-Type": "application/json" },
   });
 
-  await myAxios
-    .post("/user/register", {
-      mailAddress: mailAddress,
-      password: password,
-    })
-    .then(() => {})
-    .catch((error) => {
-      throw error;
-    });
+  await myAxios.post("/user/register", {
+    mailAddress: mailAddress,
+    password: password,
+  });
 };
 
 const SigninContainer = () => {

@@ -1,4 +1,4 @@
-#  二郎スタンプラリー FE
+# 二郎スタンプラリー FE
 
 ## 概要
 
@@ -11,25 +11,27 @@
 ### 初回セットアップ
 
 1. レポジトリのクローン
-    ``` sh
-    git clone git@github.com:fesInformatics/jiro-stamp-rally-frontend.git
-    ```
+
+   ```sh
+   git clone git@github.com:fesInformatics/jiro-stamp-rally-frontend.git
+   ```
 
 2. 環境変数のロード
-    ``` sh
-    # direnv 未インストールの場合は以下も実行
-    brew install nodenv
-    echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-    source ~/.zshrc
 
-    # 環境変数のロード
-    cd jiro-stamp-rally-frontend
-    direnv allow .
-    ```
+   ```sh
+   # direnv 未インストールの場合は以下も実行
+   brew install direnv
+   echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+   source ~/.zshrc
+
+   # 環境変数のロード
+   cd jiro-stamp-rally-frontend
+   direnv allow .
+   ```
 
 ### コンテナの起動
 
-Dokcer, DockerComposeがインストールされている前提です。
+Dokcer, DockerCompose がインストールされている前提です。
 
 ```bash
 docker compose up -d
